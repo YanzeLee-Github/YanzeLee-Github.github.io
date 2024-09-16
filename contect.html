@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>联系我 - 我的个人网站</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,6 +58,31 @@
             background-color: #4CAF50;
             color: white;
         }
+
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -65,6 +90,7 @@
         <nav>
             <div class="logo">我的网站</div>
             <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
                 <li><a href="about.html">关于我</a></li>
                 <li><a href="blog.html">我的博客</a></li>
                 <li><a href="projects.html">我的项目</a></li>
@@ -74,8 +100,26 @@
     </header>
 
     <main>
-        <h1>欢迎来到我的个人网站</h1>
-        <p>这里是我展示个人信息、博客文章、项目经验和联系方式的地方。请点击上方导航栏探索更多内容！</p>
+        <h1>联系我</h1>
+        <p>如果您有任何问题或建议，请随时与我联系。您可以通过以下方式联系我：</p>
+        <ul>
+            <li>邮箱：your.email@example.com</li>
+            <li>电话：+86 123 4567 8900</li>
+            <li>微信：YourWeChatID</li>
+        </ul>
+        <h2>或者给我留言：</h2>
+        <form>
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">邮箱：</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">留言：</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">发送</button>
+        </form>
     </main>
 
     <footer>

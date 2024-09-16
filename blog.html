@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>我的博客 - 我的个人网站</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,6 +58,15 @@
             background-color: #4CAF50;
             color: white;
         }
+
+        .blog-post {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+        .blog-post h2 {
+            color: #4CAF50;
+        }
     </style>
 </head>
 <body>
@@ -65,6 +74,7 @@
         <nav>
             <div class="logo">我的网站</div>
             <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
                 <li><a href="about.html">关于我</a></li>
                 <li><a href="blog.html">我的博客</a></li>
                 <li><a href="projects.html">我的项目</a></li>
@@ -74,8 +84,20 @@
     </header>
 
     <main>
-        <h1>欢迎来到我的个人网站</h1>
-        <p>这里是我展示个人信息、博客文章、项目经验和联系方式的地方。请点击上方导航栏探索更多内容！</p>
+        <h1>我的博客</h1>
+        <div class="blog-post">
+            <h2>博客文章标题 1</h2>
+            <p>发布日期：2023年4月15日</p>
+            <p>这里是博客文章1的摘要。您可以在这里简要介绍文章内容，吸引读者点击阅读更多。</p>
+            <a href="#">阅读更多</a>
+        </div>
+        <div class="blog-post">
+            <h2>博客文章标题 2</h2>
+            <p>发布日期：2023年4月10日</p>
+            <p>这里是博客文章2的摘要。您可以在这里简要介绍文章内容，吸引读者点击阅读更多。</p>
+            <a href="#">阅读更多</a>
+        </div>
+        <!-- 可以继续添加更多博客文章 -->
     </main>
 
     <footer>
