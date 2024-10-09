@@ -4,100 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的项目 - Eddie的个人网站</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #4CAF50;
-            padding: 1rem;
-            color: white;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-        .nav-links li {
-            margin-left: 1rem;
-        }
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-        .nav-links a:hover {
-            background-color: #45a049;
-        }
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        .project {
-            margin-bottom: 2rem;
-            padding: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .project h2 {
-            color: #4CAF50;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Eddie的网站</div>
-            <ul class="nav-links">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="about.html">关于我</a></li>
-                <li><a href="blog.html">我的博客</a></li>
-                <li><a href="projects.html">我的项目</a></li>
-                <li><a href="contact.html">联系我</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="sidebar">
+        <div class="logo">Eddie的网站</div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我</a></li>
+            <li><a href="blog.html">我的博客</a></li>
+            <li><a href="projects.html" class="active">我的项目</a></li>
+            <li><a href="contact.html">联系我</a></li>
+        </ul>
+    </div>
 
-    <main>
-        <h1>我的项目</h1>
-        <div class="project">
-            <h2>项目名称 1</h2>
-            <p>这是项目1的简短描述。您可以在这里介绍项目的主要功能、使用的技术栈等信息。</p>
-            <a href="#">查看项目</a>
-        </div>
-        
-        <!-- 可以继续添加更多项目 -->
-    </main>
+    <div class="content">
+        <main>
+            <h1>我的项目</h1>
+            <div class="project">
+                <h2>项目名称 1</h2>
+                <p>这是项目1的简短描述。您可以在这里介绍项目的主要功能、使用的技术栈等信息。</p>
+                <a href="#">查看项目</a>
+            </div>
+            
+            <!-- 可以继续添加更多项目 -->
+        </main>
 
-    <footer>
-        <p>&copy; 2023 我的个人网站. 保留所有权利.</p>
-	<a href="https://icp.gov.moe/?keyword=20240346" target="_blank">萌ICP备20240346号</a>
-    </footer>
+        <footer>
+            <p>&copy; 2023 我的个人网站. 保留所有权利.</p>
+            <a href="https://icp.gov.moe/?keyword=20240346" target="_blank">萌ICP备20240346号</a>
+        </footer>
+    </div>
 </body>
 </html>

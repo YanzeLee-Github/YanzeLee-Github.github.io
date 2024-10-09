@@ -4,127 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>联系我 - Eddie的个人网站</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #4CAF50;
-            padding: 1rem;
-            color: white;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-        .nav-links li {
-            margin-left: 1rem;
-        }
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-        .nav-links a:hover {
-            background-color: #45a049;
-        }
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        form {
-            display: grid;
-            gap: 1rem;
-        }
-        label {
-            font-weight: bold;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Eddie的网站</div>
-            <ul class="nav-links">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="about.html">关于我</a></li>
-                <li><a href="blog.html">我的博客</a></li>
-                <li><a href="projects.html">我的项目</a></li>
-                <li><a href="contact.html">联系我</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>联系我</h1>
-        <p>如果您有任何问题或建议，请随时与我联系。您可以通过以下方式联系我：</p>
-        <ul>
-            <li>邮箱：EddieMinecraft@163.com(Skype同)</li>
-            <li>电话：没有呢喵~</li>
-            <li>微信：YourWeChatID</li>
+    <div class="sidebar">
+        <div class="logo">Eddie的网站</div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我</a></li>
+            <li><a href="blog.html">我的博客</a></li>
+            <li><a href="projects.html">我的项目</a></li>
+            <li><a href="contact.html" class="active">联系我</a></li>
         </ul>
-        <h2>或者给我留言：</h2>
-        <form>
-            <label for="name">姓名：</label>
-            <input type="text" id="name" name="name" required>
+    </div>
 
-            <label for="email">邮箱：</label>
-            <input type="email" id="email" name="email" required>
+    <div class="content">
+        <main>
+            <h1>联系我</h1>
+            <p>如果您有任何问题或建议，请随时与我联系。您可以通过以下方式联系我：</p>
+            <ul>
+                <li>邮箱：EddieMinecraft@163.com(Skype同)</li>
+                <li>电话：没有呢喵~</li>
+                <li>微信：YourWeChatID</li>
+            </ul>
+            <h2>或者给我留言：</h2>
+            <form>
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="message">留言：</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="email">邮箱：</label>
+                <input type="email" id="email" name="email" required>
 
-            <button type="submit">发送</button>
-        </form>
-    </main>
+                <label for="message">留言：</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
-    <footer>
-        <p>&copy; 2023 我的个人网站. 保留所有权利.</p>
-	<a href="https://icp.gov.moe/?keyword=20240346" target="_blank">萌ICP备20240346号</a>
-    </footer>
+                <button type="submit">发送</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 我的个人网站. 保留所有权利.</p>
+            <a href="https://icp.gov.moe/?keyword=20240346" target="_blank">萌ICP备20240346号</a>
+        </footer>
+    </div>
 </body>
 </html>
