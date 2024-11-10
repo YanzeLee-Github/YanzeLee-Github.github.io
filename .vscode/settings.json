@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "files.autoGuessEncoding": false,
     "files.encoding": "utf8",
     "files.eol": "\n",
@@ -17,4 +18,7 @@
     "files.associations": {
         "*.html": "nunjucks"
     }
+=======
+    "liveServer.settings.port": 5501
+>>>>>>> 88c6c2731542f583ea01feedc0cc1e7e84d56ab8
 }
